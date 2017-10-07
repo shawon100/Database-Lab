@@ -1,0 +1,1 @@
+UPDATE iss_rec SET iss_date='2016-09-01' WHERE iss_no='28'

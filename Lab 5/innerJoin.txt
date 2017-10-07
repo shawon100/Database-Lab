@@ -1,0 +1,5 @@
+SELECT book.book_name, book.book_no,iss_rec.iss_date
+FROM book
+INNER JOIN iss_rec
+ON book.book_no=iss_rec.book_no
+ORDER BY iss_rec.iss_date

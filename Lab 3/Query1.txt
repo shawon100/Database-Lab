@@ -1,0 +1,3 @@
+SELECT emp_name,doj FROM employee,paydetails WHERE
+employee.emp_id=paydetails.emp_id AND
+doj>'2008-06-23';

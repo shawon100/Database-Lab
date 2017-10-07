@@ -1,0 +1,1 @@
+INSERT INTO employee VALUES('101','Shawon','1','pt','1000'),('102','Shakil','2','full','2000'),('103','Shuvo','2','full','4000'),('104','Sakib','3','full','3000'),('105','Sourov','4','pt','1500');

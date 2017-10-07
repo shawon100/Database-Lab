@@ -1,0 +1,4 @@
+CREATE TABLE student(
+     stud_no VARCHAR(40),
+     stud_name VARCHAR(40)
+    );

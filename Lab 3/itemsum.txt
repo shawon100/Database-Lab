@@ -1,0 +1,4 @@
+SELECT  item.item_id, SUM(qt) AS TCOUNT FROM customer,item,relationship WHERE
+customer.cust_id=relationship.cust_id AND
+item.item_id=relationship.item_id
+group by relationship.item_id

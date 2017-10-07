@@ -1,0 +1,4 @@
+SELECT  dept_name , COUNT(DISTINCT  emp_name) AS COUNT FROM employee,department,paydetails WHERE
+employee.emp_id=paydetails.emp_id AND
+department.dept_id=paydetails.dept_id
+group by dept_name;

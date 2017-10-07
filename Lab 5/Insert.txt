@@ -1,0 +1,1 @@
+INSERT INTO student VALUES('101','Shawon'),('102','Shakil'),('103','Shuvo'),('104','Sakib'),('105','Sourov'),('106','Ashadullah'),('107','Shahriar'),('108','Kumar'),('109','Ehsan'),('110','Roy');

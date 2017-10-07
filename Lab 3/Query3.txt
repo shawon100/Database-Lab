@@ -1,0 +1,3 @@
+SELECT employee.emp_id,emp_name, basic+addition-deduction AS TOTAL_SALARY FROM employee,paydetails WHERE
+employee.emp_id=paydetails.emp_id AND
+basic+addition-deduction>=50000 AND basic+addition-deduction<=60000;

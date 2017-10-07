@@ -1,0 +1,4 @@
+SELECT cust_name, SUM(qt) As Quantity, SUM((qt)*price) AS Final_Bill FROM customer,item,relationship WHERE
+customer.cust_id=relationship.cust_id AND
+item.item_id=relationship.item_id 
+GROUP BY relationship.cust_id

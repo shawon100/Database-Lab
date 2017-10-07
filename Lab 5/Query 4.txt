@@ -1,0 +1,5 @@
+SELECT  stud_name,membership.mem_no,book_name,author,iss_date FROM student, membership,book,iss_rec WHERE
+book.book_no=iss_rec.book_no AND
+membership.mem_no=iss_rec.mem_no AND
+student.stud_no=membership.stud_no AND
+author='Tanenbum'

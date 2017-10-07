@@ -1,0 +1,1 @@
+ALTER IGNORE TABLE paydetails ADD UNIQUE INDEX (emp_id,dept_id,basic,addition,deduction,doj);

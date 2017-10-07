@@ -1,0 +1,4 @@
+SELECT customer.cust_id, cust_name, SUM(qt) AS total FROM customer,relationship
+WHERE
+customer.cust_id=relationship.cust_id
+group by relationship.cust_id

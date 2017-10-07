@@ -1,0 +1,3 @@
+SELECT  book.book_no,book_name,author,CURRENT_DATE() AS Today FROM book,iss_rec WHERE
+book.book_no=iss_rec.book_no AND
+iss_date=CURRENT_DATE

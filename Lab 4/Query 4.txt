@@ -1,0 +1,4 @@
+SELECT  item_name,item.item_id, price, SUM(qt) AS Total_qt, SUM((qt)*price) AS FINAL FROM customer,item,relationship WHERE
+customer.cust_id=relationship.cust_id AND
+item.item_id=relationship.item_id
+group by relationship.item_id

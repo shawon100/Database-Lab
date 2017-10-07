@@ -1,0 +1,3 @@
+SELECT employee.emp_id,emp_name, pay_id,pay_amount,pay_date from employee,payroll WHERE
+employee.emp_id=payroll.emp_id AND
+pay_date='2016-08-01';

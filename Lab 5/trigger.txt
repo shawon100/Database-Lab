@@ -1,0 +1,28 @@
+BEGIN
+   DECLARE a float;
+   DECLARE b float;
+   DECLARE c float;
+   DECLARE d float;
+    
+    SELECT bill into c from iot WHERE no=(SELECT MAX(no) from iot)-1;
+    SELECT unit into d from iot WHERE no=(SELECT MAX(no) from iot)-1;
+    
+    
+    SET a = c+NEW.bill;
+    SET b = d+NEW.unit;
+    INSERT INTO list
+    VALUES('',a,b);
+        
+END
+
+
+BEGIN
+   DECLARE a float;
+   DECLARE b float;
+    
+    SET a = OLD.bill+NEW.bill;
+    SET b = OLD.unit+NEW.unit;
+    INSERT INTO list
+    VALUES('',a,b);
+        
+END
